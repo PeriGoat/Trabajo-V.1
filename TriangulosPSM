@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, num3;
+
+    // Leer los tres números
+    cout << "Ingrese tres números enteros: ";
+    cin >> num1 >> num2 >> num3;
+
+    // Determinar el tipo de triángulo
+    if (num1 == num2 && num2 == num3) {
+        cout << "El triángulo es equilátero." << endl;
+    } else if (num1 == num2 || num1 == num3 || num2 == num3) {
+        cout << "El triángulo es isósceles." << endl;
+    } else if (num1 != num2 && num1 != num3 && num2 != num3) {
+        cout << "El triángulo es escaleno." << endl;
+    } else {
+        cout << "Los valores ingresados no forman un triángulo." << endl;
+    }
+
+    return 0;
+}
